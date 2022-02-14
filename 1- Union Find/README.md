@@ -47,7 +47,7 @@ Union.
 	set the id of p's root to the id of q's root.
 ```
 
-# Wwighted quick union
+# Weighted quick union
 To improve the performance of Quick-union we add weights to avoid tall trees, keep track of 
 size of each tree, balance by linking root of smaller tree to root of larger tree.
 
@@ -73,7 +73,7 @@ private int root(int i)
 }
 ```
 
-# Wwighted quick union + path compression(WQUPC)
+# Weighted quick union + path compression(WQUPC)
 In here we simply add **path compression** to **weighted Quick-union**.
 
 # Summary
