@@ -96,6 +96,6 @@ Steps to perform Ternary Search:
 5. If not, then we recur to the second (middle) part.
 ```
 
-**Time Complexity: $O(log_3n)$, where n is the size of the array.**
+**Time Complexity: <img src="https://render.githubusercontent.com/render/math?math=O(log_3n)">, where n is the size of the array.**
 
 **Uses: In finding the maximum or minimum of a unimodal function.**
