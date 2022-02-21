@@ -90,12 +90,13 @@ bucketSort(arr[], n)
 4. Scatter the array elements to these buckets
         BucketIndex = ( arr[i] - min ) / range
 5. Now sort each bucket individually
-6. Gather the sorted elements from buckets to original array
+6. Gather the sorted elements from buckets to original arra
 ```
+
+This implementation is available in python.
 
 # Counting Sort
 Counting sort is a sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing). Then doing some arithmetic to calculate the position of each object in the output sequence.
-
 ```
 For simplicity, consider the data in the range 0 to 9. 
 Input data: 1, 4, 1, 2, 7, 5, 2
