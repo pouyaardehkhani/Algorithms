@@ -35,7 +35,7 @@ private:
     }
 public:
     template<typename T>
-    static int Sort(vector<T> a) {
+    static void Sort(vector<T> &a) {
         int i, loc, j, k, selected;
         for (i = 1; i < a.size(); ++i) {
             j = i - 1;
