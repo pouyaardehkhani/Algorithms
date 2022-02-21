@@ -129,3 +129,46 @@ the output sequence.
 3. It is often used as a sub-routine to another sorting algorithm like radix sort. 
 4. Counting sort uses a partial hashing to count the occurrence of the data object in O(1). 
 5. Counting sort can be extended to work for negative inputs also.
+
+# Pigeonhole Sort
+Pigeonhole sorting is a sorting algorithm that is suitable for **sorting lists of elements where the number of elements and the number of possible key values are approximately the same**. 
+
+It requires **O(n + Range)** time where n is number of elements in input array and ‘Range’ is number of possible values in array. 
+
+```
+1. Find minimum and maximum values in array. Let the minimum and maximum values be ‘min’ and ‘max’ respectively. Also find range as ‘max-min+1’. 
+2. Set up an array of initially empty “pigeonholes” the same size as of the range.
+3. Visit each element of the array and then put each element in its pigeonhole. An element arr[i] is put in hole at index arr[i] – min.
+4. Start the loop all over the pigeonhole array in order and put the elements from non- empty holes back into the original array.
+```
+
+# Comb Sort
+Comb Sort is mainly an **improvement** over **Bubble Sort**. Bubble sort always compares adjacent values. So all inversions are removed one by one. Comb Sort improves on Bubble Sort by using gap of size more than 1. The gap starts with a large value and shrinks by a factor of 1.3 in every iteration until it reaches the value 1. Thus Comb Sort removes more than one inversion counts with one swap and performs better than Bubble Sort.
+
+The shrink factor has been empirically found to be **1.3**.
+
+The worst-case complexity of this algorithm is **O(n^2)**.
+
+the Best Case complexity is **O(nlog n)**.
+
+# Cycle Sort
+Cycle sort is an in-place sorting Algorithm, unstable sorting algorithm, a comparison sort that is theoretically optimal in terms of the total number of writes to the original array. 
+
+* It is optimal in terms of number of memory writes. 
+* It is based on the idea that array to be sorted can be divided into cycles. Cycles can be visualized as a graph. We have n nodes and an edge directed from node i to node j if the element at i-th index must be present at j-th index in the sorted array. 
+
+**Time Complexity : O(n2)**
+
+**This sorting algorithm is best suited for situations where memory write or swap operations are costly.**
+
+# Cocktail Sort
+Cocktail Sort is a **variation** of **Bubble sort**. 
+The Bubble sort algorithm always traverses elements from left and moves the largest element to its correct position in first iteration and second largest in second iteration and so on. 
+Cocktail Sort traverses through a given array in both directions alternatively. 
+
+```
+1. The first stage loops through the array from left to right, just like the Bubble Sort. During the loop, adjacent items are compared and if value on the left is greater than the value on the right, then values are swapped. At the end of first iteration, largest number will reside at the end of the array.
+2. The second stage loops through the array in opposite direction- starting from the item just before the most recently sorted item, and moving back to the start of the array. Here also, adjacent items are compared and are swapped if required.
+```
+
+**Worst and Average Case Time Complexity: O(n*n).**
