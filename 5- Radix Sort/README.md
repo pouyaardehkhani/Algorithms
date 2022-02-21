@@ -8,4 +8,25 @@ The idea of Radix Sort is to do digit by digit sort starting from least signific
 ### Applications of Radix Sort : 
 * In a typical computer, which is a sequential random-access machine, where the records are keyed by multiple fields radix sort is used.
 * It was used in card sorting machines that had 80 columns, and in each column, the machine could punch a hole only in 12 places. The sorter was then programmed to sort the cards, depending upon which place the card had been punched. This was then used by the operator to collect the cards which had the 1st row punched, followed by the 2nd row, and so on.
+### Example:
+```
+Original, unsorted list:
+170, 45, 75, 90, 802, 24, 2, 66
+
+Sorting by least significant digit (1s place) gives: 
+[*Notice that we keep 802 before 2, because 802 occurred 
+before 2 in the original list, and similarly for pairs 
+170 & 90 and 45 & 75.]
+
+170, 90, 802, 2, 24, 45, 75, 66
+
+Sorting by next digit (10s place) gives: 
+[*Notice that 802 again comes before 2 as 802 comes before 
+2 in the previous list.]
+
+802, 2, 24, 45, 66, 170, 75, 90
+
+Sorting by the most significant digit (100s place) gives:
+2, 24, 45, 66, 75, 90, 170, 802
+```
 
