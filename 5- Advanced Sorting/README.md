@@ -123,6 +123,8 @@ partition (arr[], low, high)
 }
 ```
 
+# Bottom-up Quick Sort (QuickBU)
+Simple and non-recursive version of Quicksort.
 
 
 
