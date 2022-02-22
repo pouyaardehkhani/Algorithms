@@ -57,6 +57,17 @@ Simple and non-recursive version of mergesort.
 
 **Time complexity** is same as recursive, i.e., **Θ(nLogn)**. 
 
+# 3-way Merge Sort
+Merge sort involves recursively splitting the array into 2 parts, sorting and finally merging them. A variant of merge sort is called 3-way merge sort where instead of splitting the array into 2 parts we split it into 3 parts.
+
+Merge sort recursively breaks down the arrays to subarrays of size half. Similarly, 3-way Merge sort breaks down the arrays to subarrays of size one third.
+
+**Time Complexity:** In case of 2-way Merge sort we get the equation: T(n) = 2T(n/2) + O(n)
+Similarly, in case of 3-way Merge sort we get the equation: T(n) = 3T(n/3) + O(n)
+
+Although time complexity looks less compared to 2 way merge sort, the time taken actually may become higher because number of comparisons in merge function go higher. 
+
+Implementation only available in java and C++.
 
 
 
