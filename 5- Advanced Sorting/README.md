@@ -154,3 +154,10 @@ Since a Binary Heap is a Complete Binary Tree, it can be easily represented as a
 **Efficiency** –  The time required to perform Heap sort increases logarithmically while other algorithms may grow exponentially slower as the number of items to sort increases. This sorting algorithm is very efficient.
 
 **overall time complexity of Heap Sort is O(nLogn).**
+
+# Iterative Heap Sort
+HeapSort is a comparison based sorting technique where we first build Max Heap and then swaps the root element with last element (size times) and maintains the heap property each time to finally make it sorted.
+
+**overall time complexity is O(nlogn)**
+
+
