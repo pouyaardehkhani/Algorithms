@@ -126,9 +126,17 @@ partition (arr[], low, high)
 # Bottom-up Quick Sort (QuickBU)
 Simple and non-recursive version of Quicksort.
 
+# 3-Way QuickSort (Dutch National Flag)
+The idea of 3 way Quick Sort is to process all occurrences of the pivot and is based on Dutch National Flag algorithm. 
 
+```
+In 3 Way QuickSort, an array arr[l..r] is divided in 3 parts:
+a) arr[l..i] elements less than pivot.
+b) arr[i+1..j-1] elements equal to pivot.
+c) arr[j..r] elements greater than pivot.
+```
 
-
+**Time Complexity: O(N * log(N))**
 
 
 
