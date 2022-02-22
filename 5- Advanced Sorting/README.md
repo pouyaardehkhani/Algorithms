@@ -138,5 +138,19 @@ c) arr[j..r] elements greater than pivot.
 
 **Time Complexity: O(N * log(N))**
 
+# Heap Sort
+Heap sort is a comparison-based sorting technique based on Binary Heap data structure. It is similar to selection sort where we first find the minimum element and place the minimum element at the beginning. We repeat the same process for the remaining elements.
 
+### Why array based representation for Binary Heap? 
+Since a Binary Heap is a Complete Binary Tree, it can be easily represented as an array and the array-based representation is space-efficient. If the parent node is stored at index I, the left child can be calculated by 2 * I + 1 and the right child by 2 * I + 2 (assuming the indexing starts at 0).
 
+**Heap Sort Algorithm for sorting in increasing order:**
+```
+1. Build a max heap from the input data. 
+2. At this point, the largest item is stored at the root of the heap. Replace it with the last item of the heap followed by reducing the size of heap by 1. Finally, heapify the root of the tree. 
+3. Repeat step 2 while the size of the heap is greater than 1.
+```
+
+**Efficiency** –  The time required to perform Heap sort increases logarithmically while other algorithms may grow exponentially slower as the number of items to sort increases. This sorting algorithm is very efficient.
+
+**overall time complexity of Heap Sort is O(nLogn).**
