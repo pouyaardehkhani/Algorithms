@@ -1,0 +1,9 @@
+public class Tiling {
+    int getNoOfWays(int n) {
+        // Base case
+        if (n <= 2)
+            return n;
+
+        return getNoOfWays(n - 1) + getNoOfWays(n - 2);
+    }
+}
